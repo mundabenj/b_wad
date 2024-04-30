@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(236, 236, 236);
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.topnav{
+    background-color: #2b2b2bd0;
+    overflow: hidden;
+}
+.topnav a{
+    color:azure;
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-align: left;
+}
+
+.topnav a:hover{
+    color: #2b2b2bd0;
+    background-color:azure;
+    text-decoration: none;
+}
+
+.topnav-right{
+    float: right;
+}
+
+.banner{
+    background-color: rgba(45, 75, 89, 20%);
+    padding: 20px;
+    text-align: center;
+}
+
+.row:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.content{
+    float: left;
+    width: 69%;
+    padding: 15px;
+}
+.side_bar{
+    float: left;
+    width: 31%;
+    padding: 15px;
+}
+
+.footer{
+    background-color: rgba(45, 75, 89, 20%);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+table{
+    border: solid 1px #373737;
+    width: 70%;
+    border-collapse: collapse;
+}
+td{
+    border: solid 1px #373737;
+    padding: 5px;
+    text-align: left;
+}
+th{
+    background-color: rgba(75, 22, 22, 0.9);
+    color: azure;
+    border: solid 1px #373737;
+    padding: 5px;
+    text-align: left;
+}
+tr:nth-child(odd){
+    background-color: rgb(248, 184, 100);
+}
+tr:hover{
+    background-color: rgb(241, 197, 139);
+}
+h2{
+    color: chocolate;
+    text-transform: uppercase;
+    text-align: center;
+}
+h4{
+    text-align: center; 
+    color: crimson; 
+    font-weight: bold; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-size: 24px;
+    text-transform: uppercase;
+}
