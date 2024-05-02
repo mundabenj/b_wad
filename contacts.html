@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+<div class="topnav">
+    <a href="./">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="projects.html">Project</a>
+    <a href="products.html">Products</a>
+    <a href="people.html">People</a>
+    <a href="contacts.html">Contact Us</a>
+    <div class="topnav-right">
+        <a href="signup.html">Sign Up</a>
+        <a href="signin.html">Sign In</a>
+    </div>
+</div>
+<div class="banner">
+    <h1>Talk to Us</h1>
+</div>
+
+<div class="row">
+    <div class="content">
+
     <h1>Forms</h1>
-    <form action="" autocomplete="off">
+    <form action="" autocomplete="off" class="contact_us">
         <label for="fullname">Fullname:</label><br>
         <input type="text" name="fullname" placeholder="Fullname" id="fullname"><br><br>
-        <input type="password" name="userpass"><br><br>
-        <input type="number" name="age"><br><br>
-        <input type="email" name="email_address"><br><br>
-
-        <label for="Basic">Basic</label>
-        <input type="radio" name="rate" value="1" id="Basic">
-        <label for="Intermediate">Intermediate</label>
-        <input type="radio" name="rate" value="2" id="Intermediate">
-        <label for="Advanced">Advanced</label>
-        <input type="radio" id="Advanced" name="rate" value="3"><br><br>
-        
-        <input type="checkbox" id="Swahili" name="" value=""><label for="Swahili">Swahili</label><br><br>
-        <input type="checkbox" id="English" name="" value=""><label for="English">English</label><br><br>
-        <input type="checkbox" id="Japanese" name="" value=""><label for="Japanese">Japanese</label><br><br>
-        <input type="checkbox" id="Spanish" name="" value=""><label for="Spanish">Spanish</label><br><br>
-
-        <label for="Color">Color</label>
-        <input type="color" id="Color" name="color"><br><br>
-        <label for="range">Range</label>
-        <input type="range" id="range" name="range"><br><br>
-
-        <select name="" id="">
-            <option value="">--Select Gender--</option>
-            <option value="">Female</option>
-            <option value="">Male</option>
-            <option value="">Rather not say</option>
-            <option value="">Custom</option>
+        <label for="email">Email Address:</label><br>
+        <input type="email" name="email_address" id="email" placeholder="Email Address"><br><br>
+        <label for="email">Subject:</label><br>
+           <select name="" id="">
+            <option value="">--Select Subject--</option>
+            <option value="">Email Support</option>
+            <option value="">E-learning Support</option>
+            <option value="">HTML Support</option>
         </select>
         <br><br>
-
-        <input type="submit" value="Register">
-
+        <label for="message" class="form-label">Message:</label><br>
+        <textarea name="" id="message" rows="10"></textarea>
+        <br><br>
+           <input type="submit" value="Send Message">
     </form>
-</body>
-</html>
+</div>
+<div class="side_bar">
+
+    <h4>Side Bar</h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+</div>
+
+<div class="footer">
+Copyright &copy; BBIT 2.1 - Allrights Reserved
+</div>
+
+
