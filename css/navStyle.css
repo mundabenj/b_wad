@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 .topnav a{
-    color: #5b73f7d0;
+    color: #2b2b2bd0;
     text-decoration: none;
     float: left;
     display: block;
@@ -12,7 +12,7 @@
 }
 .topnav a:hover{
     color: azure;
-    background-color:#5b73f7d0;
+    background-color:#2b2b2bd0;
     text-decoration: none;
 }
 
