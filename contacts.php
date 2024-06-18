@@ -12,7 +12,7 @@
         $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, message) VALUES ('$fullname', '$email_address', '$subject_line', '$message')";
 
         if ($conn->query($insert_message) === TRUE) {
-            header("Location: contacts.php");
+            header("Location: view_messages.php");
             exit();
         } else {
             echo "Error: " . $insert_message . "<br>" . $conn->error;

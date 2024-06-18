@@ -4,6 +4,7 @@
     <a href="projects.php">Project</a>
     <a href="products.php">Products</a>
     <a href="people.php">People</a>
+    <a href="view_messages.php">View Messages</a>
     <a href="contacts.php">Contact Us</a>
     <div class="topnav-right">
         <a href="signup.php">Sign Up</a>
