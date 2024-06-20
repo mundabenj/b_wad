@@ -2,6 +2,19 @@
 require_once("includes/db_connect.php");
 include_once ("templates/heading.php");
 include_once ("templates/nav.php");
+
+
+if(isset($_GET["DelId"])){
+    $DelId = mysqli_real_escape_string($conn, $_GET["DelId"]);
+
+    $delete_message = "DELETE FROM messages WHERE messageId='$DelId' LIMIT 1";
+
+    if ($conn->query($delete_message) === TRUE) {
+        header("Location: view_messages.php");
+    } else {
+        echo "Error updating record: " . $conn->error;
+    }
+}
  ?>
         <div class="banner">
             <h1>View Messages</h1>
@@ -17,6 +30,7 @@ include_once ("templates/nav.php");
             <th>Email</th>
             <th>Subject Line</th>
             <th>Time</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -34,6 +48,7 @@ if ($sel_mes_res->num_rows > 0) {
         <td><?php print $sel_mes_row["sender_email"]; ?></td>
         <td><?php print $sel_mes_row["subject_line"] . " " . substr($sel_mes_row["message"], 0, 15) . "..."; ?></td>
         <td><?php print date("d-M-Y H:i", strtotime($sel_mes_row["datecreated"])); ?></td>
+        <td>[ <a href="edit_mes.php?messageId=<?php print $sel_mes_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_mes_row["messageId"]; ?>">Del</a> ]</td>
     </tr>
     <?php
   }
@@ -48,6 +63,7 @@ if ($sel_mes_res->num_rows > 0) {
             <th>Email</th>
             <th>Subject Line</th>
             <th>Time</th>
+            <th>Actions</th>
         </tr>
     </thead>
 </table>
