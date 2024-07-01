@@ -48,7 +48,7 @@ if ($sel_mes_res->num_rows > 0) {
         <td><?php print $sel_mes_row["sender_email"]; ?></td>
         <td><?php print $sel_mes_row["subject_line"] . " " . substr($sel_mes_row["message"], 0, 15) . "..."; ?></td>
         <td><?php print date("d-M-Y H:i", strtotime($sel_mes_row["datecreated"])); ?></td>
-        <td>[ <a href="edit_mes.php?messageId=<?php print $sel_mes_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_mes_row["messageId"]; ?>">Del</a> ]</td>
+        <td>[ <a href="edit_mes.php?messageId=<?php print $sel_mes_row["messageId"]; ?>">Edit</a> ] [ <a href="?DelId=<?php print $sel_mes_row["messageId"]; ?>" onclick="return confirm('Are you sure you want to delete this message from the database permanently?');">Del</a> ]</td>
     </tr>
     <?php
   }
