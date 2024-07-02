@@ -1,4 +1,4 @@
-input[type=text], input[type=email], select, textarea{
+input[type=text], input[type=email], input[type=password], select, textarea{
     padding: 12px 20px;
     width: 70%;
     border: 2px solid #2b2b2bd0;
@@ -24,4 +24,9 @@ textarea{
 }
 .contact_us label{
     font-size: 1.8em;
+}
+
+.error_form{
+    color: crimson;
+    font-size: small;
 }
