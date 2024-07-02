@@ -21,14 +21,14 @@ if(!filter_var($email_address, FILTER_VALIDATE_EMAIL)){
     exit();
 }
 
-        // verify that the email address domain is authorized (strathmore.edu, gmail.com, yahoo.com, etc)
+        // verify that the email address domain is authorized (Strathmore.edu, gmail.com, yahoo.com, etc)
 
         // verify that the new email address does not exist already in the database
-
+        
         // verify that the new username does not exist already in the database
-
-        // verify that the password is indentical to the repeat password
-
+        
+        // verify that the password is identical to the repeat password
+        
         // verify that the password length is between 6 and 16 characters
 
         
